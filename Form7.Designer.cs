@@ -179,6 +179,7 @@ namespace AhyokoPBLReTech
             this.ArticleBrowser.Name = "ArticleBrowser";
             this.ArticleBrowser.Size = new System.Drawing.Size(569, 566);
             this.ArticleBrowser.TabIndex = 14;
+            this.ArticleBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.ArticleBrowser_DocumentCompleted);
             // 
             // Form7
             // 

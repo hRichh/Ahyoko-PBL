@@ -62,5 +62,10 @@ namespace AhyokoPBLReTech
         {
 
         }
+
+        private void ArticleBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
     }
 }

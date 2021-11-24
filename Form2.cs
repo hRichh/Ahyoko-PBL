@@ -148,7 +148,7 @@ namespace AhyokoPBLReTech
             string name = textBox4.Text;
                 int length = name.Length;
 
-                if (!this.textBox4.Text.Contains(textBox3.Text))
+                if (!this.textBox4.Text.Equals(textBox3.Text))
                 {
                     pictureBox10.Visible = true;
                     pictureBox6.Visible = false;
