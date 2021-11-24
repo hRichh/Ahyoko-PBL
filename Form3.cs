@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace AhyokoPBLReTech
 {
@@ -104,7 +106,7 @@ namespace AhyokoPBLReTech
             }
             else
             {
-                MessageBox.Show("There is something wrong with your user or password");
+                MessageBox.Show("There is something wrong with your username or password");
             }
         }
     }
