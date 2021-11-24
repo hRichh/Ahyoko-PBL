@@ -23,5 +23,15 @@ namespace AhyokoPBLReTech
             Form4 form4 = new Form4();
             form4.ShowDialog();
         }
+
+        private void Form8_Load(object sender, EventArgs e)
+        {
+            MapsBrowser.Navigate("https://www.google.com/maps/d/u/0/edit?mid=1ttKk0UOl0iLCzmorOo_ELVkAyEKMGw-v&usp=sharing");
+        }
+
+        private void MapsBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            //Empty Event Handler
+        }
     }
 }

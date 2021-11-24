@@ -31,17 +31,16 @@ namespace AhyokoPBLReTech
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.roundButton1 = new AhyokoPBLReTech.Custom_Buttons.RoundButton();
+            this.MapsBrowser = new System.Windows.Forms.WebBrowser();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,6 +66,17 @@ namespace AhyokoPBLReTech
             this.label1.TabIndex = 0;
             this.label1.Text = "Your Safe Haven";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::AhyokoPBLReTech.Properties.Resources.Logo;
+            this.pictureBox2.Location = new System.Drawing.Point(-12, -38);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(227, 231);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(153)))), ((int)(((byte)(178)))));
@@ -87,16 +97,6 @@ namespace AhyokoPBLReTech
             this.label2.TabIndex = 5;
             this.label2.Text = "MAPS";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::AhyokoPBLReTech.Properties.Resources.Round_Square;
-            this.pictureBox3.Location = new System.Drawing.Point(29, 242);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(569, 587);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AhyokoPBLReTech.Properties.Resources.Blue_Square_Button;
@@ -106,17 +106,6 @@ namespace AhyokoPBLReTech
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::AhyokoPBLReTech.Properties.Resources.Logo;
-            this.pictureBox2.Location = new System.Drawing.Point(-12, -38);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(227, 231);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // roundButton1
             // 
@@ -138,27 +127,37 @@ namespace AhyokoPBLReTech
             this.roundButton1.UseVisualStyleBackColor = false;
             this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             // 
+            // MapsBrowser
+            // 
+            this.MapsBrowser.Location = new System.Drawing.Point(12, 260);
+            this.MapsBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.MapsBrowser.Name = "MapsBrowser";
+            this.MapsBrowser.ScrollBarsEnabled = false;
+            this.MapsBrowser.Size = new System.Drawing.Size(600, 566);
+            this.MapsBrowser.TabIndex = 13;
+            this.MapsBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.MapsBrowser_DocumentCompleted);
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(119)))), ((int)(((byte)(109)))));
             this.ClientSize = new System.Drawing.Size(624, 921);
+            this.Controls.Add(this.MapsBrowser);
             this.Controls.Add(this.roundButton1);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Form8";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form8";
+            this.Load += new System.EventHandler(this.Form8_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -171,7 +170,7 @@ namespace AhyokoPBLReTech
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private Custom_Buttons.RoundButton roundButton1;
+        private System.Windows.Forms.WebBrowser MapsBrowser;
     }
 }
