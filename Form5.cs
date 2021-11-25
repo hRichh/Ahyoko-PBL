@@ -72,5 +72,15 @@ namespace AhyokoPBLReTech
             Form4 form4 = new Form4();
             form4.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
