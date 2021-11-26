@@ -14,6 +14,7 @@ namespace AhyokoPBLReTech
 {
     public partial class Form2 : Form
     {
+        public static string emailIDForReport = "";
         public Form2()
         {
             InitializeComponent();
@@ -179,6 +180,9 @@ namespace AhyokoPBLReTech
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
+            emailIDForReport = textBox2.Text;
+            Form5 form = new Form5();
+            form.Show();
             if (pictureBox3.Visible == true && pictureBox4.Visible == true && pictureBox5.Visible == true && pictureBox6.Visible == true)
             {
                 this.Hide();

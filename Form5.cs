@@ -14,9 +14,15 @@ namespace AhyokoPBLReTech
 {
     public partial class Form5 : Form
     {
+        public string attachmentPath = "";
         public Form5()
         {
             InitializeComponent();
+
+        }
+        public void EmailforReportFunction(string emailIDForReport)
+        {
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -84,7 +90,15 @@ namespace AhyokoPBLReTech
 
         private void roundButton1_Click(object sender, EventArgs e)
         {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Select File";
+            ofd.Filter = "Image File (*.png;*.jpg;*.bmp;*.gif) | *.png;*.jpg;*.bmp;*.gif|All files (*.*)|*.*";
+            ofd.ShowDialog();
 
+            if(ofd.ShowDialog() == DialogResult.OK)
+            {
+                attachmentPath = ofd.FileName.ToString();
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -109,13 +123,24 @@ namespace AhyokoPBLReTech
 
         private void button4_Click(object sender, EventArgs e)
         {
-            {
+            { 
                 try
                 {
                     MailMessage msg = new MailMessage();
+                    if (attachmentPath != string.Empty) 
+                    {
+                        msg.Attachments.Add(new Attachment(attachmentPath));
+                    }
                     msg.From = new MailAddress("ahyoko.29@gmail.com");
                     msg.To.Add("ahyoko.29@gmail.com");
-                    msg.Subject = "Student Harrassment Report" + "Reported at: " + DateTime.Now.ToString();
+                    if (Form2.emailIDForReport != string.Empty) 
+                    {
+                        msg.Subject = "Student Harrassment Report " + "Person Reported: " + textBox2.Text + " Reported by: " + Form2.emailIDForReport;
+                    }
+                    if (Form3.userNameForReport != string.Empty)
+                    {
+                        msg.Subject = "Student Harrassment Report " + "Person Reported: " + textBox2.Text + " Reported by: "/* + SQLuserNameString*/;
+                    }
                     msg.Body = textBox1.Text;
 
                     SmtpClient smt = new SmtpClient();
