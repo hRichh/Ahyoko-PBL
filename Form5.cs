@@ -31,34 +31,8 @@ namespace AhyokoPBLReTech
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                MailMessage msg = new MailMessage();
-                msg.From = new MailAddress("ahyoko.29@gmail.com");
-                msg.To.Add("ahyoko.29@gmail.com");
-                msg.Subject = "Student Harrassment Report" + "Reported at: " + DateTime.Now.ToString();
-                msg.Body = textBox1.Text;
-
-                SmtpClient smt = new SmtpClient();
-                smt.Host = "smtp.gmail.com";
-                System.Net.NetworkCredential ntcd = new NetworkCredential();
-                ntcd.UserName = "ahyoko.29@gmail.com";
-                ntcd.Password = "Pbl2021.";
-                smt.Credentials = ntcd;
-                smt.EnableSsl = true;
-                smt.Port = 587;
-                smt.Send(msg);
-
-                MessageBox.Show("Your Report has been sent");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            this.Hide();
-            Form6 form6 = new Form6();
-            form6.ShowDialog();
+            panel8.BringToFront();
+            panel7.SendToBack();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -81,6 +55,96 @@ namespace AhyokoPBLReTech
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            {
+                try
+                {
+                    MailMessage msg = new MailMessage();
+                    msg.From = new MailAddress("ahyoko.29@gmail.com");
+                    msg.To.Add("ahyoko.29@gmail.com");
+                    msg.Subject = "Student Harrassment Report" + "Reported at: " + DateTime.Now.ToString();
+                    msg.Body = textBox1.Text;
+
+                    SmtpClient smt = new SmtpClient();
+                    smt.Host = "smtp.gmail.com";
+                    System.Net.NetworkCredential ntcd = new NetworkCredential();
+                    ntcd.UserName = "ahyoko.29@gmail.com";
+                    ntcd.Password = "Pbl2021.";
+                    smt.Credentials = ntcd;
+                    smt.EnableSsl = true;
+                    smt.Port = 587;
+                    smt.Send(msg);
+
+                    MessageBox.Show("Your Report has been sent");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+                panel8.SendToBack();
+                panel7.BringToFront();
+                textBox1.Clear();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel8.SendToBack();
+            panel7.BringToFront();
         }
     }
 }

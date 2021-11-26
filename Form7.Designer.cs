@@ -34,11 +34,9 @@ namespace AhyokoPBLReTech
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.roundButton2 = new AhyokoPBLReTech.Custom_Buttons.RoundButton();
-            this.roundButton1 = new AhyokoPBLReTech.Custom_Buttons.RoundButton();
-            this.roundButton3 = new AhyokoPBLReTech.Custom_Buttons.RoundButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ArticleBrowser = new System.Windows.Forms.WebBrowser();
+            this.roundButton3 = new AhyokoPBLReTech.Custom_Buttons.RoundButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -100,47 +98,24 @@ namespace AhyokoPBLReTech
             this.panel2.Size = new System.Drawing.Size(297, 58);
             this.panel2.TabIndex = 6;
             // 
-            // roundButton2
+            // pictureBox1
             // 
-            this.roundButton2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.roundButton2.BackgroundColor = System.Drawing.Color.RoyalBlue;
-            this.roundButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundButton2.BorderRadius = 40;
-            this.roundButton2.BorderSize = 0;
-            this.roundButton2.FlatAppearance.BorderSize = 0;
-            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton2.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton2.ForeColor = System.Drawing.Color.White;
-            this.roundButton2.Location = new System.Drawing.Point(509, 851);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(89, 47);
-            this.roundButton2.TabIndex = 12;
-            this.roundButton2.Text = "Next Page";
-            this.roundButton2.TextColor = System.Drawing.Color.White;
-            this.roundButton2.UseVisualStyleBackColor = false;
-            this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
+            this.pictureBox1.Image = global::AhyokoPBLReTech.Properties.Resources.Blue_Square_Button;
+            this.pictureBox1.Location = new System.Drawing.Point(131, 167);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(366, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
-            // roundButton1
+            // ArticleBrowser
             // 
-            this.roundButton1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.roundButton1.BackgroundColor = System.Drawing.Color.CornflowerBlue;
-            this.roundButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.roundButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundButton1.BorderRadius = 40;
-            this.roundButton1.BorderSize = 0;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.ForeColor = System.Drawing.Color.White;
-            this.roundButton1.Location = new System.Drawing.Point(398, 851);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(89, 47);
-            this.roundButton1.TabIndex = 11;
-            this.roundButton1.Text = "Prev Page";
-            this.roundButton1.TextColor = System.Drawing.Color.White;
-            this.roundButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.roundButton1.UseVisualStyleBackColor = false;
-            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
+            this.ArticleBrowser.Location = new System.Drawing.Point(29, 251);
+            this.ArticleBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.ArticleBrowser.Name = "ArticleBrowser";
+            this.ArticleBrowser.Size = new System.Drawing.Size(569, 566);
+            this.ArticleBrowser.TabIndex = 14;
+            this.ArticleBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.ArticleBrowser_DocumentCompleted);
             // 
             // roundButton3
             // 
@@ -162,25 +137,6 @@ namespace AhyokoPBLReTech
             this.roundButton3.UseVisualStyleBackColor = false;
             this.roundButton3.Click += new System.EventHandler(this.roundButton3_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AhyokoPBLReTech.Properties.Resources.Blue_Square_Button;
-            this.pictureBox1.Location = new System.Drawing.Point(131, 167);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(366, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // ArticleBrowser
-            // 
-            this.ArticleBrowser.Location = new System.Drawing.Point(29, 251);
-            this.ArticleBrowser.MinimumSize = new System.Drawing.Size(20, 20);
-            this.ArticleBrowser.Name = "ArticleBrowser";
-            this.ArticleBrowser.Size = new System.Drawing.Size(569, 566);
-            this.ArticleBrowser.TabIndex = 14;
-            this.ArticleBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.ArticleBrowser_DocumentCompleted);
-            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,11 +145,10 @@ namespace AhyokoPBLReTech
             this.ClientSize = new System.Drawing.Size(624, 921);
             this.Controls.Add(this.ArticleBrowser);
             this.Controls.Add(this.roundButton3);
-            this.Controls.Add(this.roundButton2);
-            this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form7";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form7";
@@ -216,8 +171,6 @@ namespace AhyokoPBLReTech
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private Custom_Buttons.RoundButton roundButton1;
-        private Custom_Buttons.RoundButton roundButton2;
         private Custom_Buttons.RoundButton roundButton3;
         private System.Windows.Forms.WebBrowser ArticleBrowser;
     }

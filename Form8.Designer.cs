@@ -37,6 +37,7 @@ namespace AhyokoPBLReTech
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.roundButton1 = new AhyokoPBLReTech.Custom_Buttons.RoundButton();
             this.MapsBrowser = new System.Windows.Forms.WebBrowser();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -129,13 +130,20 @@ namespace AhyokoPBLReTech
             // 
             // MapsBrowser
             // 
-            this.MapsBrowser.Location = new System.Drawing.Point(12, 260);
+            this.MapsBrowser.Location = new System.Drawing.Point(12, 251);
             this.MapsBrowser.MinimumSize = new System.Drawing.Size(20, 20);
             this.MapsBrowser.Name = "MapsBrowser";
             this.MapsBrowser.ScrollBarsEnabled = false;
-            this.MapsBrowser.Size = new System.Drawing.Size(600, 566);
+            this.MapsBrowser.Size = new System.Drawing.Size(600, 575);
             this.MapsBrowser.TabIndex = 13;
             this.MapsBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.MapsBrowser_DocumentCompleted);
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(12, 251);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(600, 23);
+            this.panel3.TabIndex = 14;
             // 
             // Form8
             // 
@@ -143,11 +151,13 @@ namespace AhyokoPBLReTech
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(119)))), ((int)(((byte)(109)))));
             this.ClientSize = new System.Drawing.Size(624, 921);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.MapsBrowser);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form8";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form8";
@@ -172,5 +182,6 @@ namespace AhyokoPBLReTech
         private System.Windows.Forms.PictureBox pictureBox1;
         private Custom_Buttons.RoundButton roundButton1;
         private System.Windows.Forms.WebBrowser MapsBrowser;
+        private System.Windows.Forms.Panel panel3;
     }
 }
