@@ -123,6 +123,16 @@ namespace AhyokoPBLReTech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Austin {
+            get {
+                object obj = ResourceManager.GetObject("Austin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Blue_Square {
             get {
                 object obj = ResourceManager.GetObject("Blue Square", resourceCulture);
@@ -146,6 +156,16 @@ namespace AhyokoPBLReTech.Properties {
         internal static System.Drawing.Bitmap Circle {
             get {
                 object obj = ResourceManager.GetObject("Circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dan {
+            get {
+                object obj = ResourceManager.GetObject("dan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +223,16 @@ namespace AhyokoPBLReTech.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Franco {
+            get {
+                object obj = ResourceManager.GetObject("Franco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Grey_Round_Square {
             get {
                 object obj = ResourceManager.GetObject("Grey Round Square", resourceCulture);
@@ -226,6 +256,16 @@ namespace AhyokoPBLReTech.Properties {
         internal static System.Drawing.Bitmap guilt_trip {
             get {
                 object obj = ResourceManager.GetObject("guilt trip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Layek {
+            get {
+                object obj = ResourceManager.GetObject("Layek", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +306,36 @@ namespace AhyokoPBLReTech.Properties {
         internal static System.Drawing.Bitmap Maps {
             get {
                 object obj = ResourceManager.GetObject("Maps", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Martha {
+            get {
+                object obj = ResourceManager.GetObject("Martha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Me {
+            get {
+                object obj = ResourceManager.GetObject("Me", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nate {
+            get {
+                object obj = ResourceManager.GetObject("nate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
